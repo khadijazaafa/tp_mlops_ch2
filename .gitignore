@@ -5,3 +5,5 @@ __pycache__/
 .dlt/
 .dbt/
 *.pyc
+
+*.duckdb
