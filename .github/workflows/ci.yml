@@ -26,5 +26,7 @@ jobs:
 
       - name: Vérification syntaxique Python
         run: |
-          python -m py_compile orchestration/pipeline_mlops.py
+          python -m py_compile orchestration.py
+          python -m py_compile ingest.py
+          python -m py_compile load_csv.py
           echo "Syntaxe OK"
