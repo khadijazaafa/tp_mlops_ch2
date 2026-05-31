@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_source
+    description: "Données nettoyées depuis la source CSV"
+    columns:
+      - name: id
+        description: "Identifiant unique"
+        tests:
+          - not_null
+          - unique
+      - name: nom
+        tests:
+          - not_null
+      - name: montant
+        tests:
+          - not_null

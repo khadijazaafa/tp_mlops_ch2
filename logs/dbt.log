@@ -1,0 +1,30 @@
+[0m15:55:42.047516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB3AEA790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB359EBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB359EC50>]}
+
+
+============================== 15:55:42.098064 | 175287d9-4f31-4714-9c81-088fa6991766 ==============================
+[0m15:55:42.098064 [info ] [MainThread]: Running with dbt=1.11.11
+[0m15:55:42.098064 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\lenovo\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init tp_dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:55:42.496862 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\lenovo\.dbt
+[0m15:55:42.513355 [debug] [MainThread]: Starter project path: D:\pfmML\tp_mlops_ch2\venv\Lib\site-packages\dbt\include\starter_project
+[0m15:55:42.636724 [info ] [MainThread]: 
+Your new dbt project "tp_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:55:42.638727 [info ] [MainThread]: Setting up your profile.
+[0m15:55:52.995853 [info ] [MainThread]: Profile tp_dbt written to C:\Users\lenovo\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:55:52.999343 [debug] [MainThread]: Command `dbt init` succeeded at 15:55:52.999343 after 11.11 seconds
+[0m15:55:52.999343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB3688190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB3AEABD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015DB3AEB790>]}
+[0m15:55:52.999343 [debug] [MainThread]: Flushing usage events
+[0m15:55:54.003032 [debug] [MainThread]: An error was encountered while trying to flush usage events

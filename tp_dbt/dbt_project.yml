@@ -1,0 +1,19 @@
+name: 'tp_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'tp_dbt'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  tp_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
