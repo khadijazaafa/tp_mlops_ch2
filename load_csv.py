@@ -1,9 +1,13 @@
 import pandas as pd
+import sys
+
+# Forcer l'encodage UTF-8 pour Windows
+sys.stdout.reconfigure(encoding='utf-8')
 
 # Chargement du fichier CSV
 df = pd.read_csv("data/source.csv")
 
-print("=== Aperçu des données ===")
+print("=== Apercu des donnees ===")
 print(df.head())
 
 print("\n=== Types des colonnes ===")
@@ -18,6 +22,6 @@ print(df.isnull().sum())
 # Validation simple
 nb_manquants = df.isnull().sum().sum()
 if nb_manquants > 0:
-    print(f"\n⚠️  Attention : {nb_manquants} valeur(s) manquante(s) détectée(s)")
+    print(f"\nATTENTION : {nb_manquants} valeur(s) manquante(s) detectee(s)")
 else:
-    print("\n✅ Aucune valeur manquante")
+    print("\nOK : Aucune valeur manquante")
